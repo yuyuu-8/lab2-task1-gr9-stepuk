@@ -1,8 +1,6 @@
-/* hello.c */
+/* main.c */
 #include <stdio.h>
 
-void main (void)
-{
-	printf ("Hello World\n");
-	printf ("Goodbye World\n");
+int is_leap_year(int year) {
+  return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
 }
